@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cfe2f3;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #6fa8dc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #6fa8dc;
+}
+
+button {
+    background-color: #6fa8dc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.delete-btn{
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #9fc5e8;
+}
+
+/* Transaction Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    text-align: left;
+}
+
+thead {
+    background-color: #9fc5e8;
+    color: black;
+}
+
+th, td {
+    border: 1px solid #6fa8dc;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f8ff;
+}
+
+/* Balance Styling */
+#balance {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}

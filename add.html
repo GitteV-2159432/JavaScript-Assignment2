@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction</title>
+    <script src="tracker.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Add New Transaction</h1>
+            <form id="transaction-form">
+                <input type="date" id="date" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <select id="category"></select>
+                <button type="submit">Add Transaction</button>
+            </form>
+            <button onclick="window.location.href='tracker.html'">Back to Transactions</button>
+        </div>
+    </div>
+</body>
+
+</html>

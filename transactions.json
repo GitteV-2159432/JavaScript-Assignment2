@@ -1,0 +1,30 @@
+[
+  {
+    "description": "test",
+    "amount": 5,
+    "type": "income",
+    "date": "28/03/2025",
+    "category": "Salary"
+  },
+  {
+    "description": "test",
+    "amount": 6,
+    "type": "expense",
+    "date": "28/03/2025",
+    "category": "Groceries"
+  },
+  {
+    "description": "qsdlk",
+    "amount": 6,
+    "type": "income",
+    "date": "08/08/2025",
+    "category": "Salary"
+  },
+  {
+    "description": "sd",
+    "amount": 65,
+    "type": "income",
+    "date": "30/03/2025",
+    "category": "Salary"
+  }
+]
