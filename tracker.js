@@ -282,7 +282,6 @@ class FinanceTracker {
         document.body.appendChild(popup);
     }
 
-    // Wrong date format is saved
     saveEdit(transactionId) {
         const editedTransaction = {
             id: document.getElementById("edit-id").value,
