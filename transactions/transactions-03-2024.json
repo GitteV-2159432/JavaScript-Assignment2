@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2024-03-030",
+    "description": "Loon",
+    "amount": 400,
+    "type": "income",
+    "date": "2024-03-03",
+    "category": "Salary"
+  },
+  {
+    "id": "2024-03-120",
+    "description": "Beleggingen",
+    "amount": 10,
+    "type": "income",
+    "date": "2024-03-12",
+    "category": "Investment"
+  },
+  {
+    "id": "2024-03-210",
+    "description": "Studiebeurs",
+    "amount": 669,
+    "type": "income",
+    "date": "2024-03-21",
+    "category": "Grant"
+  },
+  {
+    "id": "2024-03-170",
+    "description": "Terugbetaling Lisa",
+    "amount": 15,
+    "type": "income",
+    "date": "2024-03-17",
+    "category": "Other"
+  },
+  {
+    "id": "2024-03-010",
+    "description": "Lidl",
+    "amount": 29.65,
+    "type": "expense",
+    "date": "2024-03-01",
+    "category": "Groceries"
+  },
+  {
+    "id": "2024-03-050",
+    "description": "Rent",
+    "amount": 328,
+    "type": "expense",
+    "date": "2024-03-05",
+    "category": "Rent"
+  },
+  {
+    "id": "2024-03-300",
+    "description": "qsmdkjqmjld",
+    "amount": 100,
+    "type": "expense",
+    "date": "2024-03-30",
+    "category": "Utilities"
+  },
+  {
+    "id": "2024-03-121",
+    "description": "Train",
+    "amount": 6.45,
+    "type": "expense",
+    "date": "2024-03-12",
+    "category": "Transport"
+  },
+  {
+    "id": "2024-03-110",
+    "description": "Cadeau Warre",
+    "amount": 17.96,
+    "type": "expense",
+    "date": "2024-03-11",
+    "category": "Other"
+  }
+]

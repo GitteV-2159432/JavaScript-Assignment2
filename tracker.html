@@ -6,58 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance Tracker</title>
     <script src="tracker.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
     <h1>Personal Finance Tracker</h1>
-<div class = "main-container">
-    <div class="container">
-        <button onclick="window.location.href='add.html'">Add Transaction</button>
+    <div class="main-container">
+        <div class="left-container container">
+            <p>Total Balance: <span id="balance">€0</span></p>
+            <button onclick="window.location.href='add.html'">Add Transaction</button>
+            <select id="month-select">
+                <option value="">Select Month</option>
+                <option value="00">Year</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <select id="year-select">
+                <script>
+                    const currentYear = new Date().getFullYear();
+                    for (let i = currentYear; i >= currentYear - 5; i--) {
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
 
-        <h2>Transactions</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Amount in</th>
-                    <th>Amount out</th>
-                    <th>Category</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody id="transaction-table"></tbody>
-        </table>
+            <h2>Transactions</h2>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount in</th>
+                        <th>Amount out</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-table"></tbody>
+            </table>
+        </div>
 
-        <h2>Summary</h2>
-        <p>Total Balance: <span id="balance">$0</span></p>
+        <div class="right-container">
+            <div class="container">
+                <h2>Expense Summary</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-summary"></tbody>
+                </table>
+
+                <h2>Income Summary</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="income-summary"></tbody>
+                </table>
+            </div>
+
+            <div class="container">
+                <canvas id="myChart"></canvas>
+                <br>
+                <canvas id="myChart2"></canvas>
+                <br>
+                <canvas id="myChart3"></canvas>
+            </div>
+        </div>
     </div>
-
-    <div class="container">
-        <h2>Expense Summary</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Amount</th>
-                </tr>
-            </thead>
-            <tbody id="expense-summary"></tbody>
-        </table>
-
-        <h2>Income Summary</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Amount</th>
-                </tr>
-            </thead>
-            <tbody id="income-summary"></tbody>
-        </table>
-    </div>
-</div>
 </body>
 
 </html>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2025-05-200",
+    "description": "0",
+    "amount": 60,
+    "type": "income",
+    "date": "2025-05-20",
+    "category": "Salary"
+  },
+  {
+    "id": "2025-05-201",
+    "description": "1",
+    "amount": 100,
+    "type": "income",
+    "date": "2025-05-20",
+    "category": "Salary"
+  },
+  {
+    "id": "2025-05-202",
+    "description": "2",
+    "amount": 100,
+    "type": "income",
+    "date": "2025-05-20",
+    "category": "Salary"
+  },
+  {
+    "id": "2025-05-203",
+    "description": "3",
+    "amount": 100,
+    "type": "income",
+    "date": "2025-05-20",
+    "category": "Grant"
+  },
+  {
+    "id": "2025-05-204",
+    "description": "4",
+    "amount": 100,
+    "type": "income",
+    "date": "2025-05-20",
+    "category": "Salary"
+  },
+  {
+    "id": "2025-05-205",
+    "description": "5",
+    "amount": 100,
+    "type": "income",
+    "date": "2025-05-20",
+    "category": "Grant"
+  },
+  {
+    "id": "2025-05-206",
+    "description": "6",
+    "amount": 100,
+    "type": "income",
+    "date": "2025-05-20",
+    "category": "Grant"
+  },
+  {
+    "id": "2025-05-207",
+    "description": "9",
+    "amount": 960,
+    "type": "expense",
+    "date": "2025-05-20",
+    "category": "Groceries"
+  },
+  {
+    "id": "2025-05-310",
+    "description": "8",
+    "amount": 60,
+    "type": "expense",
+    "date": "2025-05-31",
+    "category": "Rent"
+  }
+]
